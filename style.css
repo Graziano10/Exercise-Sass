@@ -11,7 +11,6 @@ div {
   border: solid 1px red;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 div h1 {
@@ -22,11 +21,12 @@ div h1 {
   text-underline-offset: 7px;
   margin: 0;
   padding-top: 30px;
+  text-align: center;
 }
 
 div section {
   display: flex;
-  margin: 15px;
+  margin: 15px 15px 0px 15px;
 }
 
 div section article {
@@ -44,4 +44,22 @@ div section p {
 
 div section .p-red {
   color: red;
+}
+
+.lastSelection {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.lastArticle {
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  border: solid 1px blue;
+}
+
+.lastParagraph {
+  color: green;
+  font-size: 27.1px;
 }/*# sourceMappingURL=style.css.map */

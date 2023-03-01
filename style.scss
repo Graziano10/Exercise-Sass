@@ -1,0 +1,82 @@
+
+
+/* -- VARIABLES -- */
+
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+$font-family: "Mincho";
+
+@mixin footer-article () {
+    border: solid 1px $color-secondary;
+}
+
+@mixin footer-paragraph () {
+    color: $color-tertiary;
+    font-size: 27.1px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: 10px;
+    height: 100%;
+    border: solid 1px $color-primary;
+    display: flex;
+    flex-direction: column;
+}
+
+div h1 {
+    font-size: 30px;
+    color: $color-tertiary;
+    text-decoration: underline 1px $color-secondary; 
+    text-underline-offset: 7px;
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+}
+
+div section {
+    display: flex;
+    margin: 15px 15px 0px 15px;
+
+}
+
+div section article {
+    border: solid 1px $color-tertiary;
+    text-align: center;
+    padding: 20px;
+}
+
+div section p {
+    font-size: 17px;
+    color: $color-secondary;
+    margin: 0;
+    font-family: "Mincho";    
+}
+
+div section .p-red{
+    color: $color-primary;
+}
+
+.lastSelection {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+}
+.lastArticle {
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    @include footer-article();
+}
+
+.lastParagraph {
+    @include footer-paragraph();
+}
+
