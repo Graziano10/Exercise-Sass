@@ -1,0 +1,86 @@
+
+
+/* -- VARIABLES -- */
+
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+$font-family: "Mincho";
+
+@mixin footer-article () {
+    border: solid 1px darken($color: $color-secondary , $amount: 10%);
+}
+
+@mixin footer-paragraph () {
+    color: darken($color: $color-tertiary, $amount: 5%);;
+    font-size: 27.1px;
+}
+
+@function converterRem($value) {
+    $remValue : (value / 16) + rem;
+    @return $remValue
+}  
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: 10px;
+    height: 100%;
+    border: solid 1px darken($color: $color-primary, $amount: 20%);
+    display: flex;
+    flex-direction: column;
+}
+
+div h1 {
+    font-size: 30px;
+    color: darken($color: $color-tertiary, $amount: 5%);
+    text-decoration: underline 1px $color-secondary; 
+    text-underline-offset: 7px;
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+}
+
+div section {
+    display: flex;
+    margin: 15px 15px 0px 15px;
+
+}
+
+div section article {
+    border: solid 1px $color-tertiary;
+    text-align: center;
+    padding: 20px;
+}
+
+div section article p {
+    font-size: converterRem(16px);
+    color: darken($color: $color-secondary , $amount: 10%);
+    margin: 0;
+    font-family: "Mincho";    
+}
+
+div section .p-red{
+    color: darken($color: $color-primary , $amount: 20%)
+}
+
+.lastSelection {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+}
+.lastArticle {
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    @include footer-article();
+}
+
+.lastParagraph {
+   @include footer-paragraph();
+}

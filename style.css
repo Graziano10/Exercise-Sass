@@ -1,0 +1,65 @@
+/* -- VARIABLES -- */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  margin: 10px;
+  height: 100%;
+  border: solid 1px #990000;
+  display: flex;
+  flex-direction: column;
+}
+
+div h1 {
+  font-size: 30px;
+  color: #006700;
+  -webkit-text-decoration: underline 1px blue;
+          text-decoration: underline 1px blue;
+  text-underline-offset: 7px;
+  margin: 0;
+  padding-top: 30px;
+  text-align: center;
+}
+
+div section {
+  display: flex;
+  margin: 15px 15px 0px 15px;
+}
+
+div section article {
+  border: solid 1px green;
+  text-align: center;
+  padding: 20px;
+}
+
+div section article p {
+  font-size: value/16rem;
+  color: #0000cc;
+  margin: 0;
+  font-family: "Mincho";
+}
+
+div section .p-red {
+  color: #990000;
+}
+
+.lastSelection {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.lastArticle {
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  border: solid 1px #0000cc;
+}
+
+.lastParagraph {
+  color: #006700;
+  font-size: 27.1px;
+}/*# sourceMappingURL=style.css.map */
