@@ -1,0 +1,56 @@
+div {
+  justify-content: center;
+  text-align: center;
+  border: solid 1px #990000;
+  padding: 8px;
+}
+
+section, .section-01 {
+  display: flex;
+  padding: 8px;
+}
+
+.section-01 {
+  padding-top: 30px;
+}
+
+article {
+  border: solid 1px green;
+  font-family: "Mincho";
+  font-size: value/16rem;
+}
+
+h1, h2 {
+  color: #005c00;
+  -webkit-text-decoration: underline px blue;
+          text-decoration: underline px blue;
+  text-underline-offset: 7px;
+  padding-bottom: 15px;
+}
+
+h2 {
+  padding: 1rem;
+  border: solid 1px #b30000;
+  text-decoration: none;
+  justify-content: center;
+  display: inline;
+}
+
+.last-article {
+  border: solid 1px #000099;
+  padding: 8px;
+  font-size: 22px;
+  width: 100%;
+}
+
+.last-paragraph {
+  color: #005c00;
+}
+
+.blue-paragraph {
+  color: #0000b3;
+}
+
+.red-paragraph {
+  color: #b30000;
+}/*# sourceMappingURL=style.css.map */
